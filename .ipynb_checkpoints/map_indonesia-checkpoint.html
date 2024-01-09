@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_392124b63455295951619cf80ab668de {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_392124b63455295951619cf80ab668de" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_392124b63455295951619cf80ab668de = L.map(
+                "map_392124b63455295951619cf80ab668de",
+                {
+                    center: [-2.5489, 118.0149],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8de8be472b3d6ad80c4c716ca3ffd215 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_8de8be472b3d6ad80c4c716ca3ffd215.addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var marker_6bdcaff5d5540628fc7dc362d92f9af9 = L.marker(
+                [3.7419388, 96.8337899],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_9d199afce6b7ddf04e17c5e70e034fb5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6bdcaff5d5540628fc7dc362d92f9af9.setIcon(icon_9d199afce6b7ddf04e17c5e70e034fb5);
+        
+    
+        var popup_abee110e0eda4baa209597e70084f2e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_769e5b286abdb3712e97676271481a2e = $(`<div id="html_769e5b286abdb3712e97676271481a2e" style="width: 100.0%; height: 100.0%;">Prov. Aceh - Jumlah SD: 3433 - Jumlah SMP: 1084 - Jumlah SMA: 509 - Jumlah SMK: 200 - Jumlah SMLB: 8</div>`)[0];
+                popup_abee110e0eda4baa209597e70084f2e6.setContent(html_769e5b286abdb3712e97676271481a2e);
+            
+        
+
+        marker_6bdcaff5d5540628fc7dc362d92f9af9.bindPopup(popup_abee110e0eda4baa209597e70084f2e6)
+        ;
+
+        
+    
+    
+            var marker_de27e3d2442286aa4cf8c29f57d4ca3e = L.marker(
+                [-8.63208135, 115.2378085230927],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_e8a11218ecadb4ae40db39592bb5b233 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_de27e3d2442286aa4cf8c29f57d4ca3e.setIcon(icon_e8a11218ecadb4ae40db39592bb5b233);
+        
+    
+        var popup_18efbc4136b13d315d337cb301eeb81a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c9e34bb63e817f526bfdc7e7347927e = $(`<div id="html_7c9e34bb63e817f526bfdc7e7347927e" style="width: 100.0%; height: 100.0%;">Prov. Bali - Jumlah SD: 2431 - Jumlah SMP: 394 - Jumlah SMA: 154 - Jumlah SMK: 179 - Jumlah SMLB: 0</div>`)[0];
+                popup_18efbc4136b13d315d337cb301eeb81a.setContent(html_7c9e34bb63e817f526bfdc7e7347927e);
+            
+        
+
+        marker_de27e3d2442286aa4cf8c29f57d4ca3e.bindPopup(popup_18efbc4136b13d315d337cb301eeb81a)
+        ;
+
+        
+    
+    
+            var marker_23582b2dfedfd613ff84220ea01e3d78 = L.marker(
+                [-2.151764, 106.1568913],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_2e8948466cc40f46e8c701779b07712f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_23582b2dfedfd613ff84220ea01e3d78.setIcon(icon_2e8948466cc40f46e8c701779b07712f);
+        
+    
+        var popup_44ce3393ad6ccebddaa1ce14f11c69e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b88e81d7da3fff3d43eb73ab13dcb802 = $(`<div id="html_b88e81d7da3fff3d43eb73ab13dcb802" style="width: 100.0%; height: 100.0%;">Prov. Bangka Belitung - Jumlah SD: 804 - Jumlah SMP: 208 - Jumlah SMA: 67 - Jumlah SMK: 54 - Jumlah SMLB: 0</div>`)[0];
+                popup_44ce3393ad6ccebddaa1ce14f11c69e0.setContent(html_b88e81d7da3fff3d43eb73ab13dcb802);
+            
+        
+
+        marker_23582b2dfedfd613ff84220ea01e3d78.bindPopup(popup_44ce3393ad6ccebddaa1ce14f11c69e0)
+        ;
+
+        
+    
+    
+            var marker_dd891605a5f5ca278daa829d80e95356 = L.marker(
+                [-6.4058, 106.064],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_ff65c4d9aff1cc8216fb3342a084c729 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dd891605a5f5ca278daa829d80e95356.setIcon(icon_ff65c4d9aff1cc8216fb3342a084c729);
+        
+    
+        var popup_9442acd3ed8486d7283b78bd2f3e8c06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94033714c348c577a303291a8900980d = $(`<div id="html_94033714c348c577a303291a8900980d" style="width: 100.0%; height: 100.0%;">Prov. Banten - Jumlah SD: 4536 - Jumlah SMP: 1367 - Jumlah SMA: 506 - Jumlah SMK: 656 - Jumlah SMLB: 1</div>`)[0];
+                popup_9442acd3ed8486d7283b78bd2f3e8c06.setContent(html_94033714c348c577a303291a8900980d);
+            
+        
+
+        marker_dd891605a5f5ca278daa829d80e95356.bindPopup(popup_9442acd3ed8486d7283b78bd2f3e8c06)
+        ;
+
+        
+    
+    
+            var marker_f9f5678ac79db700975db6f134d38c26 = L.marker(
+                [-3.7940689499999998, 102.27015267126168],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_e5697050114f406ade6cab7000c04e90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f9f5678ac79db700975db6f134d38c26.setIcon(icon_e5697050114f406ade6cab7000c04e90);
+        
+    
+        var popup_2770450fa587f5c8f0cf0404d9372d58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_077afd3865e8a09a45ccd439dd4ada1f = $(`<div id="html_077afd3865e8a09a45ccd439dd4ada1f" style="width: 100.0%; height: 100.0%;">Prov. Bengkulu - Jumlah SD: 1366 - Jumlah SMP: 418 - Jumlah SMA: 134 - Jumlah SMK: 92 - Jumlah SMLB: 0</div>`)[0];
+                popup_2770450fa587f5c8f0cf0404d9372d58.setContent(html_077afd3865e8a09a45ccd439dd4ada1f);
+            
+        
+
+        marker_f9f5678ac79db700975db6f134d38c26.bindPopup(popup_2770450fa587f5c8f0cf0404d9372d58)
+        ;
+
+        
+    
+    
+            var marker_4b6ba0545e1f7d11bb05f854b4acbc2e = L.marker(
+                [-7.8012, 110.3645],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_239b48618749c317dac5a925eb228321 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4b6ba0545e1f7d11bb05f854b4acbc2e.setIcon(icon_239b48618749c317dac5a925eb228321);
+        
+    
+        var popup_893d1ca301e470c0d3bd91667d1d1ced = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5d06a83dc3a28411f30e58415d218e9 = $(`<div id="html_c5d06a83dc3a28411f30e58415d218e9" style="width: 100.0%; height: 100.0%;">Prov. D.I. Yogyakarta - Jumlah SD: 1843 - Jumlah SMP: 433 - Jumlah SMA: 163 - Jumlah SMK: 220 - Jumlah SMLB: 0</div>`)[0];
+                popup_893d1ca301e470c0d3bd91667d1d1ced.setContent(html_c5d06a83dc3a28411f30e58415d218e9);
+            
+        
+
+        marker_4b6ba0545e1f7d11bb05f854b4acbc2e.bindPopup(popup_893d1ca301e470c0d3bd91667d1d1ced)
+        ;
+
+        
+    
+    
+            var marker_684aaaf4483e3d3d62750e937c6b07e2 = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_fc9aea4871f85e608e69f7199d00caf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_684aaaf4483e3d3d62750e937c6b07e2.setIcon(icon_fc9aea4871f85e608e69f7199d00caf2);
+        
+    
+        var popup_b4b4bf80b59c56a383ba2346d91b9a85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fea0921b909bcc8406da6328b6ac25d = $(`<div id="html_9fea0921b909bcc8406da6328b6ac25d" style="width: 100.0%; height: 100.0%;">Prov. D.K.I. Jakarta - Jumlah SD: 2616 - Jumlah SMP: 1043 - Jumlah SMA: 456 - Jumlah SMK: 598 - Jumlah SMLB: 1</div>`)[0];
+                popup_b4b4bf80b59c56a383ba2346d91b9a85.setContent(html_9fea0921b909bcc8406da6328b6ac25d);
+            
+        
+
+        marker_684aaaf4483e3d3d62750e937c6b07e2.bindPopup(popup_b4b4bf80b59c56a383ba2346d91b9a85)
+        ;
+
+        
+    
+    
+            var marker_2bc2b4f8295577b6f02e36e2ee86cde2 = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_94d066eece5995e29d1a6f2e0c057932 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2bc2b4f8295577b6f02e36e2ee86cde2.setIcon(icon_94d066eece5995e29d1a6f2e0c057932);
+        
+    
+        var popup_e82c351ca4bd0aa2e7565a469e107708 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_833f16b51f428fcc0087f221aa8889f8 = $(`<div id="html_833f16b51f428fcc0087f221aa8889f8" style="width: 100.0%; height: 100.0%;">Prov. Gorontalo - Jumlah SD: 930 - Jumlah SMP: 325 - Jumlah SMA: 59 - Jumlah SMK: 55 - Jumlah SMLB: 0</div>`)[0];
+                popup_e82c351ca4bd0aa2e7565a469e107708.setContent(html_833f16b51f428fcc0087f221aa8889f8);
+            
+        
+
+        marker_2bc2b4f8295577b6f02e36e2ee86cde2.bindPopup(popup_e82c351ca4bd0aa2e7565a469e107708)
+        ;
+
+        
+    
+    
+            var marker_288c7ffc3df652c5c3d8487c0c54d734 = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_ea9628aa5520303b1da80e215fa67d8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_288c7ffc3df652c5c3d8487c0c54d734.setIcon(icon_ea9628aa5520303b1da80e215fa67d8f);
+        
+    
+        var popup_ef44c58d86e0f8ad1a395c34b2cd95e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58fe1ddf381a390b5393df9f006d694d = $(`<div id="html_58fe1ddf381a390b5393df9f006d694d" style="width: 100.0%; height: 100.0%;">Prov. Jambi - Jumlah SD: 2444 - Jumlah SMP: 649 - Jumlah SMA: 221 - Jumlah SMK: 171 - Jumlah SMLB: 0</div>`)[0];
+                popup_ef44c58d86e0f8ad1a395c34b2cd95e3.setContent(html_58fe1ddf381a390b5393df9f006d694d);
+            
+        
+
+        marker_288c7ffc3df652c5c3d8487c0c54d734.bindPopup(popup_ef44c58d86e0f8ad1a395c34b2cd95e3)
+        ;
+
+        
+    
+    
+            var marker_422439c45ead010e05940497d983e5d0 = L.marker(
+                [-6.8057581, 108.2983914],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_534e8cd30091c75f042a1024dae85c0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_422439c45ead010e05940497d983e5d0.setIcon(icon_534e8cd30091c75f042a1024dae85c0b);
+        
+    
+        var popup_316aa957cbf104f817978b0a76a975b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b019667544dfedef5949c173fecf2877 = $(`<div id="html_b019667544dfedef5949c173fecf2877" style="width: 100.0%; height: 100.0%;">Prov. Jawa Barat - Jumlah SD: 19948 - Jumlah SMP: 4922 - Jumlah SMA: 1524 - Jumlah SMK: 2766 - Jumlah SMLB: 1</div>`)[0];
+                popup_316aa957cbf104f817978b0a76a975b5.setContent(html_b019667544dfedef5949c173fecf2877);
+            
+        
+
+        marker_422439c45ead010e05940497d983e5d0.bindPopup(popup_316aa957cbf104f817978b0a76a975b5)
+        ;
+
+        
+    
+    
+            var marker_39997ca875dccb1e00b97eb8318e213c = L.marker(
+                [-7.0159342, 110.3866968],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_3e8e98bd1972a8c225a41104ef7aebdd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_39997ca875dccb1e00b97eb8318e213c.setIcon(icon_3e8e98bd1972a8c225a41104ef7aebdd);
+        
+    
+        var popup_fc261f92178c218a5a4478bd037c67aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ca2487a2ed20dda3ac829063fb9e7cb = $(`<div id="html_9ca2487a2ed20dda3ac829063fb9e7cb" style="width: 100.0%; height: 100.0%;">Prov. Jawa Tengah - Jumlah SD: 19133 - Jumlah SMP: 3261 - Jumlah SMA: 863 - Jumlah SMK: 1561 - Jumlah SMLB: 5</div>`)[0];
+                popup_fc261f92178c218a5a4478bd037c67aa.setContent(html_9ca2487a2ed20dda3ac829063fb9e7cb);
+            
+        
+
+        marker_39997ca875dccb1e00b97eb8318e213c.bindPopup(popup_fc261f92178c218a5a4478bd037c67aa)
+        ;
+
+        
+    
+    
+            var marker_26378b2e14f7bbb2c90d1c4e8c724ab7 = L.marker(
+                [-8.578297, 116.1025675],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_a204e548ebce22aaec201ca6a7857b5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_26378b2e14f7bbb2c90d1c4e8c724ab7.setIcon(icon_a204e548ebce22aaec201ca6a7857b5e);
+        
+    
+        var popup_c8dd27e5f25c8b5f61cd9b836f7ff3bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4fe39bf912e3d1e8d8825f0d635daae = $(`<div id="html_f4fe39bf912e3d1e8d8825f0d635daae" style="width: 100.0%; height: 100.0%;">Prov. Jawa Timur - Jumlah SD: 19417 - Jumlah SMP: 4515 - Jumlah SMA: 1488 - Jumlah SMK: 1927 - Jumlah SMLB: 52</div>`)[0];
+                popup_c8dd27e5f25c8b5f61cd9b836f7ff3bd.setContent(html_f4fe39bf912e3d1e8d8825f0d635daae);
+            
+        
+
+        marker_26378b2e14f7bbb2c90d1c4e8c724ab7.bindPopup(popup_c8dd27e5f25c8b5f61cd9b836f7ff3bd)
+        ;
+
+        
+    
+    
+            var marker_9908fe6536551b07589ea581a6052bad = L.marker(
+                [-0.0580101, 109.3660937],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_1ed49405712ea8d94bc405838ccfcc85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9908fe6536551b07589ea581a6052bad.setIcon(icon_1ed49405712ea8d94bc405838ccfcc85);
+        
+    
+        var popup_b86d5aec6af6e9db3050de2b57c2c742 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01351b297fe51249070171189c690183 = $(`<div id="html_01351b297fe51249070171189c690183" style="width: 100.0%; height: 100.0%;">Prov. Kalimantan Barat - Jumlah SD: 4363 - Jumlah SMP: 1265 - Jumlah SMA: 408 - Jumlah SMK: 192 - Jumlah SMLB: 0</div>`)[0];
+                popup_b86d5aec6af6e9db3050de2b57c2c742.setContent(html_01351b297fe51249070171189c690183);
+            
+        
+
+        marker_9908fe6536551b07589ea581a6052bad.bindPopup(popup_b86d5aec6af6e9db3050de2b57c2c742)
+        ;
+
+        
+    
+    
+            var marker_5303c6c02dc09b92d9b6fe067a330db7 = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_2cce2289f58ca9f2e6500033d3de7976 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5303c6c02dc09b92d9b6fe067a330db7.setIcon(icon_2cce2289f58ca9f2e6500033d3de7976);
+        
+    
+        var popup_386d03d0b740876a7249bb8b481e993f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99afe9bdbd81c969089b4b61b8ca7794 = $(`<div id="html_99afe9bdbd81c969089b4b61b8ca7794" style="width: 100.0%; height: 100.0%;">Prov. Kalimantan Selatan - Jumlah SD: 2908 - Jumlah SMP: 591 - Jumlah SMA: 184 - Jumlah SMK: 123 - Jumlah SMLB: 8</div>`)[0];
+                popup_386d03d0b740876a7249bb8b481e993f.setContent(html_99afe9bdbd81c969089b4b61b8ca7794);
+            
+        
+
+        marker_5303c6c02dc09b92d9b6fe067a330db7.bindPopup(popup_386d03d0b740876a7249bb8b481e993f)
+        ;
+
+        
+    
+    
+            var marker_8fe1ba50be92c76fe6c95a0d620e2421 = L.marker(
+                [-2.20758885, 113.91470754460249],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_811b072c3ca621f8580b74075dc13550 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8fe1ba50be92c76fe6c95a0d620e2421.setIcon(icon_811b072c3ca621f8580b74075dc13550);
+        
+    
+        var popup_1fd3b6c22d93080facaebe337593a013 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5d4729c7993c0f685eba0a73740d364 = $(`<div id="html_a5d4729c7993c0f685eba0a73740d364" style="width: 100.0%; height: 100.0%;">Prov. Kalimantan Tengah - Jumlah SD: 2620 - Jumlah SMP: 804 - Jumlah SMA: 233 - Jumlah SMK: 131 - Jumlah SMLB: 1</div>`)[0];
+                popup_1fd3b6c22d93080facaebe337593a013.setContent(html_a5d4729c7993c0f685eba0a73740d364);
+            
+        
+
+        marker_8fe1ba50be92c76fe6c95a0d620e2421.bindPopup(popup_1fd3b6c22d93080facaebe337593a013)
+        ;
+
+        
+    
+    
+            var marker_b5625c951466d4a60b2bb2788268ad45 = L.marker(
+                [-0.4921515, 117.15095418177857],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_98a7a59a2d51d11d8506f132c0f1b8e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b5625c951466d4a60b2bb2788268ad45.setIcon(icon_98a7a59a2d51d11d8506f132c0f1b8e5);
+        
+    
+        var popup_55c6d87e869142d11bb106988e22a9d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee77df37a323b7551625ca5cbd2fff96 = $(`<div id="html_ee77df37a323b7551625ca5cbd2fff96" style="width: 100.0%; height: 100.0%;">Prov. Kalimantan Timur - Jumlah SD: 1852 - Jumlah SMP: 610 - Jumlah SMA: 215 - Jumlah SMK: 220 - Jumlah SMLB: 1</div>`)[0];
+                popup_55c6d87e869142d11bb106988e22a9d3.setContent(html_ee77df37a323b7551625ca5cbd2fff96);
+            
+        
+
+        marker_b5625c951466d4a60b2bb2788268ad45.bindPopup(popup_55c6d87e869142d11bb106988e22a9d3)
+        ;
+
+        
+    
+    
+            var marker_a2c5333fda3dbee38e6f21def2db4967 = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_6e07395f1e134bfbf36bb623b27e1d31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a2c5333fda3dbee38e6f21def2db4967.setIcon(icon_6e07395f1e134bfbf36bb623b27e1d31);
+        
+    
+        var popup_6319432a7fbd7d515696dac52adf4eeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6d9acba3c2bcc73328eaa56b9c906dc = $(`<div id="html_d6d9acba3c2bcc73328eaa56b9c906dc" style="width: 100.0%; height: 100.0%;">Prov. Kalimantan Utara - Jumlah SD: 461 - Jumlah SMP: 164 - Jumlah SMA: 59 - Jumlah SMK: 28 - Jumlah SMLB: 0</div>`)[0];
+                popup_6319432a7fbd7d515696dac52adf4eeb.setContent(html_d6d9acba3c2bcc73328eaa56b9c906dc);
+            
+        
+
+        marker_a2c5333fda3dbee38e6f21def2db4967.bindPopup(popup_6319432a7fbd7d515696dac52adf4eeb)
+        ;
+
+        
+    
+    
+            var marker_09de2d2af554bbd2078721b52294d068 = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_4733af8a72112b8655968485aabf9ec0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_09de2d2af554bbd2078721b52294d068.setIcon(icon_4733af8a72112b8655968485aabf9ec0);
+        
+    
+        var popup_9b0ae8006ab64946ca5acd1f93856431 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_180173880ea76108f94356d61e0aed82 = $(`<div id="html_180173880ea76108f94356d61e0aed82" style="width: 100.0%; height: 100.0%;">Prov. Kepulauan Riau - Jumlah SD: 907 - Jumlah SMP: 330 - Jumlah SMA: 117 - Jumlah SMK: 93 - Jumlah SMLB: 1</div>`)[0];
+                popup_9b0ae8006ab64946ca5acd1f93856431.setContent(html_180173880ea76108f94356d61e0aed82);
+            
+        
+
+        marker_09de2d2af554bbd2078721b52294d068.bindPopup(popup_9b0ae8006ab64946ca5acd1f93856431)
+        ;
+
+        
+    
+    
+            var marker_797e3348fbad458779822f603a4ca9b5 = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_4da79b4aeb765ed3f5ead50b4f8a2b1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_797e3348fbad458779822f603a4ca9b5.setIcon(icon_4da79b4aeb765ed3f5ead50b4f8a2b1d);
+        
+    
+        var popup_4c005229d8c0a84855a154752e20bf16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b55fe506faf59d1bf757f35b120776d1 = $(`<div id="html_b55fe506faf59d1bf757f35b120776d1" style="width: 100.0%; height: 100.0%;">Prov. Lampung - Jumlah SD: 4645 - Jumlah SMP: 1333 - Jumlah SMA: 475 - Jumlah SMK: 446 - Jumlah SMLB: 0</div>`)[0];
+                popup_4c005229d8c0a84855a154752e20bf16.setContent(html_b55fe506faf59d1bf757f35b120776d1);
+            
+        
+
+        marker_797e3348fbad458779822f603a4ca9b5.bindPopup(popup_4c005229d8c0a84855a154752e20bf16)
+        ;
+
+        
+    
+    
+            var marker_580ffafa1fb55870eea3a3589d26502c = L.marker(
+                [-3.6943441999999997, 128.182612882934],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_0ebdeaf2abe6c051d3b04b93c4e7b07c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_580ffafa1fb55870eea3a3589d26502c.setIcon(icon_0ebdeaf2abe6c051d3b04b93c4e7b07c);
+        
+    
+        var popup_e0955b64df5c0966fdfb17a96efafb7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e02956a4cb488cab5f7a2fa4e4d72c03 = $(`<div id="html_e02956a4cb488cab5f7a2fa4e4d72c03" style="width: 100.0%; height: 100.0%;">Prov. Maluku - Jumlah SD: 1760 - Jumlah SMP: 616 - Jumlah SMA: 265 - Jumlah SMK: 110 - Jumlah SMLB: 0</div>`)[0];
+                popup_e0955b64df5c0966fdfb17a96efafb7a.setContent(html_e02956a4cb488cab5f7a2fa4e4d72c03);
+            
+        
+
+        marker_580ffafa1fb55870eea3a3589d26502c.bindPopup(popup_e0955b64df5c0966fdfb17a96efafb7a)
+        ;
+
+        
+    
+    
+            var marker_be5bae975d93208ae706376b17afb63b = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_fcd22fcf849d969d50e42b4a3c1a3f6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_be5bae975d93208ae706376b17afb63b.setIcon(icon_fcd22fcf849d969d50e42b4a3c1a3f6b);
+        
+    
+        var popup_227972cc5bfd59e83a245a17277b9711 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2e7a4e8c18b251362e2b771b06343f0 = $(`<div id="html_e2e7a4e8c18b251362e2b771b06343f0" style="width: 100.0%; height: 100.0%;">Prov. Maluku Utara - Jumlah SD: 1291 - Jumlah SMP: 462 - Jumlah SMA: 181 - Jumlah SMK: 113 - Jumlah SMLB: 3</div>`)[0];
+                popup_227972cc5bfd59e83a245a17277b9711.setContent(html_e2e7a4e8c18b251362e2b771b06343f0);
+            
+        
+
+        marker_be5bae975d93208ae706376b17afb63b.bindPopup(popup_227972cc5bfd59e83a245a17277b9711)
+        ;
+
+        
+    
+    
+            var marker_4b58bd61b523b26321e62e135e29d94d = L.marker(
+                [-8.5801718, 116.1040669],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_30dd0a4c0b3b195b6b5eaf25a3d64945 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4b58bd61b523b26321e62e135e29d94d.setIcon(icon_30dd0a4c0b3b195b6b5eaf25a3d64945);
+        
+    
+        var popup_afdb79417e4b39b20450c5c7a660aeb5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0285408df2fc2da8e837b060e08786c = $(`<div id="html_a0285408df2fc2da8e837b060e08786c" style="width: 100.0%; height: 100.0%;">Prov. Nusa Tenggara Barat - Jumlah SD: 3159 - Jumlah SMP: 862 - Jumlah SMA: 312 - Jumlah SMK: 294 - Jumlah SMLB: 2</div>`)[0];
+                popup_afdb79417e4b39b20450c5c7a660aeb5.setContent(html_a0285408df2fc2da8e837b060e08786c);
+            
+        
+
+        marker_4b58bd61b523b26321e62e135e29d94d.bindPopup(popup_afdb79417e4b39b20450c5c7a660aeb5)
+        ;
+
+        
+    
+    
+            var marker_bf0dbbce5c4723e3b529f64219c90c4f = L.marker(
+                [-10.1507486, 123.6152675],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_2da2fea49fe04bc0d1a964199e610a3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bf0dbbce5c4723e3b529f64219c90c4f.setIcon(icon_2da2fea49fe04bc0d1a964199e610a3c);
+        
+    
+        var popup_68b6aa3e2393f87a6734e8ec50c65d41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1368ce2e6c641d75a2d94b243168dd03 = $(`<div id="html_1368ce2e6c641d75a2d94b243168dd03" style="width: 100.0%; height: 100.0%;">Prov. Nusa Tenggara Timur - Jumlah SD: 5019 - Jumlah SMP: 1596 - Jumlah SMA: 502 - Jumlah SMK: 272 - Jumlah SMLB: 10</div>`)[0];
+                popup_68b6aa3e2393f87a6734e8ec50c65d41.setContent(html_1368ce2e6c641d75a2d94b243168dd03);
+            
+        
+
+        marker_bf0dbbce5c4723e3b529f64219c90c4f.bindPopup(popup_68b6aa3e2393f87a6734e8ec50c65d41)
+        ;
+
+        
+    
+    
+            var marker_708ca11647fec005de4d72e50b505369 = L.marker(
+                [-0.92014255, 134.0290562],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_83982ac4d944d8f2f36607a131d3cd5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_708ca11647fec005de4d72e50b505369.setIcon(icon_83982ac4d944d8f2f36607a131d3cd5c);
+        
+    
+        var popup_6c712516fb03f0603dd81ead254aebe3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_520ef997d2b25a084addac91895f00c7 = $(`<div id="html_520ef997d2b25a084addac91895f00c7" style="width: 100.0%; height: 100.0%;">Prov. Papua - Jumlah SD: 2445 - Jumlah SMP: 624 - Jumlah SMA: 221 - Jumlah SMK: 127 - Jumlah SMLB: 1</div>`)[0];
+                popup_6c712516fb03f0603dd81ead254aebe3.setContent(html_520ef997d2b25a084addac91895f00c7);
+            
+        
+
+        marker_708ca11647fec005de4d72e50b505369.bindPopup(popup_6c712516fb03f0603dd81ead254aebe3)
+        ;
+
+        
+    
+    
+            var marker_56ffc7c177d93d44abcdbee02288f8d9 = L.marker(
+                [-0.92014255, 134.0290562],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_14c07b18885ade2ade693dc0b36d15b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_56ffc7c177d93d44abcdbee02288f8d9.setIcon(icon_14c07b18885ade2ade693dc0b36d15b1);
+        
+    
+        var popup_322423be01b96839ddf92bc731aba543 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b21d1a07daa8a1870cc3dc861744242 = $(`<div id="html_3b21d1a07daa8a1870cc3dc861744242" style="width: 100.0%; height: 100.0%;">Prov. Papua Barat - Jumlah SD: 1012 - Jumlah SMP: 284 - Jumlah SMA: 118 - Jumlah SMK: 52 - Jumlah SMLB: 1</div>`)[0];
+                popup_322423be01b96839ddf92bc731aba543.setContent(html_3b21d1a07daa8a1870cc3dc861744242);
+            
+        
+
+        marker_56ffc7c177d93d44abcdbee02288f8d9.bindPopup(popup_322423be01b96839ddf92bc731aba543)
+        ;
+
+        
+    
+    
+            var marker_4ebaab45dc7df686972c92e6cc4a3b00 = L.marker(
+                [0.5004112, 101.5475811],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_cc5656840393b6916144b303017da832 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4ebaab45dc7df686972c92e6cc4a3b00.setIcon(icon_cc5656840393b6916144b303017da832);
+        
+    
+        var popup_1870218913b4e610dc612bc644502982 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e57ccb609853cfec27e71bfe3cc2e2ba = $(`<div id="html_e57ccb609853cfec27e71bfe3cc2e2ba" style="width: 100.0%; height: 100.0%;">Prov. Riau - Jumlah SD: 3614 - Jumlah SMP: 1109 - Jumlah SMA: 425 - Jumlah SMK: 280 - Jumlah SMLB: 0</div>`)[0];
+                popup_1870218913b4e610dc612bc644502982.setContent(html_e57ccb609853cfec27e71bfe3cc2e2ba);
+            
+        
+
+        marker_4ebaab45dc7df686972c92e6cc4a3b00.bindPopup(popup_1870218913b4e610dc612bc644502982)
+        ;
+
+        
+    
+    
+            var marker_2102ceb3fb49f10f26decc5c9c5b5170 = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_8cb6b216b50ba786ca2328eb01a2f7b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2102ceb3fb49f10f26decc5c9c5b5170.setIcon(icon_8cb6b216b50ba786ca2328eb01a2f7b9);
+        
+    
+        var popup_c78d013e8d452faa49c5d8367a12a2f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20690a1737d006536bbd65873347580a = $(`<div id="html_20690a1737d006536bbd65873347580a" style="width: 100.0%; height: 100.0%;">Prov. Sulawesi Barat - Jumlah SD: 1321 - Jumlah SMP: 343 - Jumlah SMA: 82 - Jumlah SMK: 124 - Jumlah SMLB: 0</div>`)[0];
+                popup_c78d013e8d452faa49c5d8367a12a2f3.setContent(html_20690a1737d006536bbd65873347580a);
+            
+        
+
+        marker_2102ceb3fb49f10f26decc5c9c5b5170.bindPopup(popup_c78d013e8d452faa49c5d8367a12a2f3)
+        ;
+
+        
+    
+    
+            var marker_937f439986cf5994a9426f9a6d2dc03f = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_7070ec1aa0e658bf88d496309cb7851f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_937f439986cf5994a9426f9a6d2dc03f.setIcon(icon_7070ec1aa0e658bf88d496309cb7851f);
+        
+    
+        var popup_3dbc94a4f50b2093f63798addc0c4d82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a3444813162a62a3f247308bcfda748 = $(`<div id="html_5a3444813162a62a3f247308bcfda748" style="width: 100.0%; height: 100.0%;">Prov. Sulawesi Selatan - Jumlah SD: 6390 - Jumlah SMP: 1627 - Jumlah SMA: 574 - Jumlah SMK: 436 - Jumlah SMLB: 4</div>`)[0];
+                popup_3dbc94a4f50b2093f63798addc0c4d82.setContent(html_5a3444813162a62a3f247308bcfda748);
+            
+        
+
+        marker_937f439986cf5994a9426f9a6d2dc03f.bindPopup(popup_3dbc94a4f50b2093f63798addc0c4d82)
+        ;
+
+        
+    
+    
+            var marker_5be2e2a39667d2f92da00aeb38979c66 = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_c44edbe30768042a15d8feb79f58f59e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5be2e2a39667d2f92da00aeb38979c66.setIcon(icon_c44edbe30768042a15d8feb79f58f59e);
+        
+    
+        var popup_89175b0d90b62d834b7032acdb85215e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbe30fd4165eb35a000a42ada3e0796c = $(`<div id="html_cbe30fd4165eb35a000a42ada3e0796c" style="width: 100.0%; height: 100.0%;">Prov. Sulawesi Tengah - Jumlah SD: 2879 - Jumlah SMP: 821 - Jumlah SMA: 205 - Jumlah SMK: 174 - Jumlah SMLB: 0</div>`)[0];
+                popup_89175b0d90b62d834b7032acdb85215e.setContent(html_cbe30fd4165eb35a000a42ada3e0796c);
+            
+        
+
+        marker_5be2e2a39667d2f92da00aeb38979c66.bindPopup(popup_89175b0d90b62d834b7032acdb85215e)
+        ;
+
+        
+    
+    
+            var marker_c126e4e9c574fc103ecca4c84231e619 = L.marker(
+                [-3.97105315, 122.51344],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_ff066d8fbc07a44356c98c27c070a288 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c126e4e9c574fc103ecca4c84231e619.setIcon(icon_ff066d8fbc07a44356c98c27c070a288);
+        
+    
+        var popup_7b17db95148a4342cc96d0ea68ef4149 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b1504203b6b011f13fc3909211005d8 = $(`<div id="html_1b1504203b6b011f13fc3909211005d8" style="width: 100.0%; height: 100.0%;">Prov. Sulawesi Tenggara - Jumlah SD: 2301 - Jumlah SMP: 734 - Jumlah SMA: 285 - Jumlah SMK: 151 - Jumlah SMLB: 5</div>`)[0];
+                popup_7b17db95148a4342cc96d0ea68ef4149.setContent(html_1b1504203b6b011f13fc3909211005d8);
+            
+        
+
+        marker_c126e4e9c574fc103ecca4c84231e619.bindPopup(popup_7b17db95148a4342cc96d0ea68ef4149)
+        ;
+
+        
+    
+    
+            var marker_0d15463117835e562508cfa74bf34327 = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_c5829e274c116657ce650098c1248741 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0d15463117835e562508cfa74bf34327.setIcon(icon_c5829e274c116657ce650098c1248741);
+        
+    
+        var popup_a87441b69057d76ced10008da5284742 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d7352ae2ae0f9bbaf28434472ba4066 = $(`<div id="html_3d7352ae2ae0f9bbaf28434472ba4066" style="width: 100.0%; height: 100.0%;">Prov. Sulawesi Utara - Jumlah SD: 2220 - Jumlah SMP: 705 - Jumlah SMA: 219 - Jumlah SMK: 181 - Jumlah SMLB: 0</div>`)[0];
+                popup_a87441b69057d76ced10008da5284742.setContent(html_3d7352ae2ae0f9bbaf28434472ba4066);
+            
+        
+
+        marker_0d15463117835e562508cfa74bf34327.bindPopup(popup_a87441b69057d76ced10008da5284742)
+        ;
+
+        
+    
+    
+            var marker_ec34e08478e1d182a4e8fbbdf34b6289 = L.marker(
+                [0.4441376, 101.4048424],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_9f8285fa563cec246bc8b7cda2b18262 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ec34e08478e1d182a4e8fbbdf34b6289.setIcon(icon_9f8285fa563cec246bc8b7cda2b18262);
+        
+    
+        var popup_7007b67bb35b76f73a2d49f0a4ea756f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ed141195ac458ae3232f9924aa36dfd = $(`<div id="html_0ed141195ac458ae3232f9924aa36dfd" style="width: 100.0%; height: 100.0%;">Prov. Sumatera Barat - Jumlah SD: 4145 - Jumlah SMP: 785 - Jumlah SMA: 317 - Jumlah SMK: 206 - Jumlah SMLB: 3</div>`)[0];
+                popup_7007b67bb35b76f73a2d49f0a4ea756f.setContent(html_0ed141195ac458ae3232f9924aa36dfd);
+            
+        
+
+        marker_ec34e08478e1d182a4e8fbbdf34b6289.bindPopup(popup_7007b67bb35b76f73a2d49f0a4ea756f)
+        ;
+
+        
+    
+    
+            var marker_f1950d177f05df0006a471fa2b578b19 = L.marker(
+                [0.0, 0.0],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_ed7b2fdffc08708fb53014ce85414077 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f1950d177f05df0006a471fa2b578b19.setIcon(icon_ed7b2fdffc08708fb53014ce85414077);
+        
+    
+        var popup_612511171df2ed4bb06beaed0047ba29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_677844fdfa9212dc79743756ed8a1a9d = $(`<div id="html_677844fdfa9212dc79743756ed8a1a9d" style="width: 100.0%; height: 100.0%;">Prov. Sumatera Selatan - Jumlah SD: 4661 - Jumlah SMP: 1291 - Jumlah SMA: 591 - Jumlah SMK: 286 - Jumlah SMLB: 0</div>`)[0];
+                popup_612511171df2ed4bb06beaed0047ba29.setContent(html_677844fdfa9212dc79743756ed8a1a9d);
+            
+        
+
+        marker_f1950d177f05df0006a471fa2b578b19.bindPopup(popup_612511171df2ed4bb06beaed0047ba29)
+        ;
+
+        
+    
+    
+            var marker_4216382f7c12813daa523fc81e58cf3a = L.marker(
+                [3.6048607, 98.71827865136494],
+                {}
+            ).addTo(map_392124b63455295951619cf80ab668de);
+        
+    
+            var icon_292aca517606e868bd3d9e7eea6cbefd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4216382f7c12813daa523fc81e58cf3a.setIcon(icon_292aca517606e868bd3d9e7eea6cbefd);
+        
+    
+        var popup_9c8884a3a32e000847b69624fc939399 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15a40b5267360f11f47ac0c968d3ddee = $(`<div id="html_15a40b5267360f11f47ac0c968d3ddee" style="width: 100.0%; height: 100.0%;">Prov. Sumatera Utara - Jumlah SD: 9605 - Jumlah SMP: 2470 - Jumlah SMA: 1049 - Jumlah SMK: 973 - Jumlah SMLB: 1</div>`)[0];
+                popup_9c8884a3a32e000847b69624fc939399.setContent(html_15a40b5267360f11f47ac0c968d3ddee);
+            
+        
+
+        marker_4216382f7c12813daa523fc81e58cf3a.bindPopup(popup_9c8884a3a32e000847b69624fc939399)
+        ;
+
+        
+    
+</script>
+</html>
